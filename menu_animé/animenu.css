@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #809fa9;
+}
+
+.navbar {
+  display: flex;
+  height: 100%;
+  width: 100px;
+  justify-content: center;
+  position: fixed;
+}
+
+.menu {
+  background-color: #597983;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  padding-left: 0;
+}
+.menu .logo {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+}
+.menu .logo:hover {
+  background: #fff;
+}
+.menu .logo .link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.menu .logo .link .fas {
+  font-size: 3rem;
+  padding: 0.5em;
+  color: #e77a41;
+}
+.menu .logo .texte {
+  display: block;
+  background-color: #32372f;
+  color: #fff;
+  left: 100px;
+}
+
+/*# sourceMappingURL=animenu.css.map */
