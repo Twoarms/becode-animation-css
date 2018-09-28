@@ -31,10 +31,12 @@ body {
         margin: auto;
         justify-content: center;
         align-content: center;
+        &:first-child {
+            background-color: darken($color: #809fa9, $amount: 35%);
+        }
         &:hover {
             background: #fff;
         }
-
 
         .link {
             display: block;
@@ -50,11 +52,26 @@ body {
             }
         }
 
-        .texte {
+        .text {
             display: block;
             background-color: #32372f;
             color: #fff;
+            left: -120px;
+            opacity: 0;
+            position: absolute;
+            height: 6rem;
+            width: 18rem;
+            margin: 0;
+            transition-duration: 300ms;
+            padding: {
+                top: 1.8em;
+                left: 1em;
+            }
+        }
+
+        .link:hover + .text {
             left: 100px;
+            opacity: 1;
         }
     }
 }

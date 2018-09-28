@@ -32,6 +32,9 @@ body {
   justify-content: center;
   align-content: center;
 }
+.menu .logo:first-child {
+  background-color: #304147;
+}
 .menu .logo:hover {
   background: #fff;
 }
@@ -47,11 +50,23 @@ body {
   padding: 0.5em;
   color: #e77a41;
 }
-.menu .logo .texte {
+.menu .logo .text {
   display: block;
   background-color: #32372f;
   color: #fff;
+  left: -120px;
+  opacity: 0;
+  position: absolute;
+  height: 6rem;
+  width: 18rem;
+  margin: 0;
+  transition-duration: 300ms;
+  padding-top: 1.8em;
+  padding-left: 1em;
+}
+.menu .logo .link:hover + .text {
   left: 100px;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=animenu.css.map */
